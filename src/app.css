@@ -3,21 +3,168 @@
 @import './prism.css';
 @import 'tailwindcss/utilities';
 
-@layer base {
-  body {
-    @apply text-zinc-600 dark:text-zinc-400;
-  }
+@tailwind base;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply text-zinc-900 dark:text-zinc-200;
-  }
-
-  hr {
-    @apply border-zinc-100 dark:border-zinc-700/25;
-  }
+* {
+    scrollbar-width: 15px;
+    scrollbar-color:  #261e29 #12001a;
 }
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #12001a;
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #261e29;
+    border-radius: 10px;
+    border: 1px solid #b899c8;
+}
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 0);
+    background-size: 50px 50px;
+}
+
+.bg-glassomorphism {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.linkicon,
+.whiteicon {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7492%) hue-rotate(267deg) brightness(99%) contrast(102%);
+    transition: transform 0.05s ease-in;
+}
+
+.linkicon:hover,
+.whiteicon:hover {
+    transform: scale(1.1);
+}
+
+.linkicon,
+.linktext {
+    position: relative;
+    text-decoration: none;
+}
+
+.linkicon:hover,
+.linktext:hover {
+    opacity: 0.8;
+}
+
+.tooltip-social,
+.tooltip-discord,
+.tooltip {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+.tooltip:before {
+    content: attr(data-text);
+    position: absolute;
+
+    top: -135%;
+    transform: translateX(-25%);
+
+    padding: 2px 5px 2px 5px;
+    border-radius: 4px;
+    background:#09000d;
+    opacity: 0.95;
+    color: #fff;
+
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    white-space: nowrap;
+    display:none;
+    font-family: VarelaRound;
+}
+.tooltip-social:hover:before,
+.tooltip-discord:hover:before,
+.tooltip:hover:before {
+    display:block;
+}
+
+.tooltip-social:before {
+    content: attr(data-text);
+    position: absolute;
+
+    top: -70%;
+    transform: translateX(-22%);
+
+    padding: 2px 5px 2px 5px;
+    border-radius: 4px;
+    background:#09000d;
+    opacity: 0.95;
+    color: #fff;
+
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    white-space: nowrap;
+    display:none;
+    font-family: VarelaRound;
+}
+
+.tooltip-discord:before {
+    content: attr(data-text);
+    position: absolute;
+
+    top: -50%;
+    transform: translateX(-12%);
+
+    padding: 2px 5px 2px 5px;
+    border-radius: 4px;
+    background:#09000d;
+    opacity: 0.95;
+    color: #fff;
+
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    white-space: nowrap;
+    display:none;
+    font-family: VarelaRound;
+}
+
+
+::selection {
+    background: #2d1c36;
+}
+
+@layer base {
+    @font-face {
+        font-family:'AffiliateMastery';
+        src: url(/font/AffiliateMasteryRegular.otf) format('opentype');
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family:'VarelaRound';
+        src: url(/font/VarelaRound.ttf) format('truetype');
+        font-display: swap;
+    }  
+    @font-face {
+        font-family:'Michael';
+        src: url(/font/michael.otf) format('opentype');
+        font-display: swap;
+    }     
+}
+  

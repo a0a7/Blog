@@ -3,7 +3,24 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts,md,svx}'],
   plugins: [require('@tailwindcss/typography')],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        mastery: ['"AffiliateMastery"', "serif"],
+        varela: ['"VarelaRound"', "sans-serif"],
+        michael: ['"Michael"', "sans-serif"],
+      },
+      scale: {
+        '90': '0.9',
+        '130': '1.3',
+      },
+      colors: {
+        'fuchsia-975': '#09000d',
+        'glass-950': '#040D12',
+        'glass-900': '#183D3D',
+        'glass-800': '#5C8374',
+        'glass-700': '#93B1A6',
+      },
+    },
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
