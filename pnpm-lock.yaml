@@ -1,4 +1,4 @@
-lockfileVersion: 5.4
+lockfileVersion: 9
 
 specifiers:
   '@sveltejs/adapter-cloudflare': ^2.1.0
