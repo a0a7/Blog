@@ -29,6 +29,9 @@ importers:
       reading-time-estimator:
         specifier: ^1.4.33
         version: 1.11.0
+      vanilla-tilt-svelte:
+        specifier: ^1.0.4
+        version: 1.0.4
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^2.1.0
@@ -2379,6 +2382,9 @@ packages:
   v8-compile-cache@2.4.0:
     resolution: {integrity: sha512-ocyWc3bAHBB/guyqJQVI5o4BZkPhznPYUG2ea80Gond/BgNWpap8TOmLSeeQG7bnh2KMISxskdADG59j7zruhw==}
 
+  vanilla-tilt-svelte@1.0.4:
+    resolution: {integrity: sha512-i/8y3f25J2uXOTRu9l7SJ7ueqJbVsF2CxGk6z48631/PlCiNbzVRKU+yvtiPONtTYTuwaPA7M9dxRVAMgjuIhQ==}
+
   vfile-message@2.0.4:
     resolution: {integrity: sha512-DjssxRGkMvifUOJre00juHoP9DPWuzjxKuMDrhNbk2TdaYYBNMStsNhEOt3idrtI12VQYM/1+iM0KOzXi4pxwQ==}
 
@@ -4578,6 +4584,8 @@ snapshots:
   util-deprecate@1.0.2: {}
 
   v8-compile-cache@2.4.0: {}
+
+  vanilla-tilt-svelte@1.0.4: {}
 
   vfile-message@2.0.4:
     dependencies:

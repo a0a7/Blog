@@ -44,6 +44,7 @@
 		"heroicons-svelte": "^0.0.1",
 		"node-html-parser": "^5.2.0",
 		"reading-time": "^1.5.0",
-		"reading-time-estimator": "^1.4.33"
+		"reading-time-estimator": "^1.4.33",
+		"vanilla-tilt-svelte": "^1.0.4"
 	}
 }
