@@ -1,6 +1,6 @@
 import { posts } from '$lib/data/posts'
 import { error } from '@sveltejs/kit'
-
+export const prerender = false;
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ params }) {
   const { slug } = params
