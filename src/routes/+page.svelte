@@ -32,10 +32,6 @@
   </section>-->
   <section class="w-full">
     <div class="flex items-center justify-between gap-4 mb-8 pt-4">
-      <h2 class="text-sm font-medium font-bold font-varela">
-        recent
-      </h2>
     </div>
-    <PostsList posts={data.posts} />
   </section>
 </div>

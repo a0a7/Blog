@@ -5,9 +5,13 @@
 
 @tailwind base;
 
+body {
+    text-color: #d5e2d8;
+    background-color: #010601;
+}
 * {
     scrollbar-width: 15px;
-    scrollbar-color:  #261e29 #12001a;
+    scrollbar-color:  #1c261e #020601;
 }
 
 *::-webkit-scrollbar {
@@ -15,14 +19,14 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: #12001a;
+    background: #020601;
     border-radius: 5px;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #261e29;
+    background-color: #1c261e;
     border-radius: 10px;
-    border: 1px solid #b899c8;
+    border: 1px solid #aac899;
 }
 @tailwind components;
 @tailwind utilities;
@@ -37,6 +41,7 @@ body {
 }
 
 .bg-glassomorphism {
+    filter: saturate(2.625) brightness(1.14);
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -146,7 +151,7 @@ body {
 
 
 ::selection {
-    background: #2d1c36;
+    background: #1b3123;
 }
 
 @layer base {
