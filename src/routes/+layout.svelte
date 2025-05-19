@@ -54,9 +54,9 @@
       on:mouseenter={startWaveSwitch}
       on:mouseleave={stopWaveSwitch} 
       href="/" class="font-mastery text-sm font-thin tracking-wide flex-shrink-0 saturate-[.45] -ml-4"><img src={waveSrc} class="h-8" alt="funny waving emoji"></a>
-      <div class="flex gap-6 overflow-x-auto whitespace-nowrap pl-2  font-mastery text-sm font-thin underline">
+      <div class="flex gap-6 overflow-x-auto whitespace-nowrap pl-5  font-mastery text-sm font-thin underline">
         <a href="/bio" class="flex-shrink-0">bio</a>
-        <a href="/work" class="flex-shrink-0 ">projects</a>
+        <a href="https://a0.ax/?a=x" class="flex-shrink-0 ">projects</a>
         <a href="/journal" class="flex-shrink-0 ">notes</a>
       </div>
     </div>
