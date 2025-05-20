@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { posts } from '$lib/data/posts'
 import { error } from '@sveltejs/kit'
-
+export const prerender = false;
 /** @param {Parameters<import('./$types').PageServerLoad>[0]} event */
 export async function load({ params }) {
   const { slug } = params
