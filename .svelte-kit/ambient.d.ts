@@ -30,6 +30,7 @@ declare module '$env/static/private' {
 	export const APPDATA: string;
 	export const ChocolateyInstall: string;
 	export const ChocolateyLastPathUpdate: string;
+	export const ChocolateyToolsLocation: string;
 	export const CHROME_CRASHPAD_PIPE_NAME: string;
 	export const COLORTERM: string;
 	export const CommonProgramFiles: string;
@@ -39,7 +40,13 @@ declare module '$env/static/private' {
 	export const CUDA_PATH: string;
 	export const CUDA_PATH_V12_4: string;
 	export const DriverData: string;
-	export const EFC_14916_1592913036: string;
+	export const EFC_592_1262719628: string;
+	export const EFC_592_1592913036: string;
+	export const EFC_592_2283032206: string;
+	export const EFC_592_2775293581: string;
+	export const EFC_592_3789132940: string;
+	export const FPS_BROWSER_APP_PROFILE_STRING: string;
+	export const FPS_BROWSER_USER_PROFILE_STRING: string;
 	export const GIT_ASKPASS: string;
 	export const HOME: string;
 	export const HOMEDRIVE: string;
@@ -132,6 +139,7 @@ declare module '$env/dynamic/private' {
 		APPDATA: string;
 		ChocolateyInstall: string;
 		ChocolateyLastPathUpdate: string;
+		ChocolateyToolsLocation: string;
 		CHROME_CRASHPAD_PIPE_NAME: string;
 		COLORTERM: string;
 		CommonProgramFiles: string;
@@ -141,7 +149,13 @@ declare module '$env/dynamic/private' {
 		CUDA_PATH: string;
 		CUDA_PATH_V12_4: string;
 		DriverData: string;
-		EFC_14916_1592913036: string;
+		EFC_592_1262719628: string;
+		EFC_592_1592913036: string;
+		EFC_592_2283032206: string;
+		EFC_592_2775293581: string;
+		EFC_592_3789132940: string;
+		FPS_BROWSER_APP_PROFILE_STRING: string;
+		FPS_BROWSER_USER_PROFILE_STRING: string;
 		GIT_ASKPASS: string;
 		HOME: string;
 		HOMEDRIVE: string;

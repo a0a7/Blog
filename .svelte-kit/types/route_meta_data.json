@@ -4,9 +4,6 @@
 		"src/routes/+layout.js",
 		"src/routes/+layout.js"
 	],
-	"/journal": [
-		"src/routes/+layout.js"
-	],
 	"/post/[slug]": [
 		"src/routes/post/[slug]/+page.js",
 		"src/routes/post/[slug]/+page.server.js",
