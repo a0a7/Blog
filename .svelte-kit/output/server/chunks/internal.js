@@ -1,5 +1,14 @@
-import { c as create_ssr_component, a as setContext, v as validate_component, m as missing_component } from "./index2.js";
-import "./paths.js";
+import { c as create_ssr_component, a as setContext, v as validate_component, m as missing_component } from "./index.js";
+let base = "";
+let assets = base;
+const initial = { base, assets };
+function reset() {
+  base = initial.base;
+  assets = initial.assets;
+}
+function set_assets(path) {
+  assets = initial.assets = path;
+}
 let public_env = {};
 function set_private_env(environment) {
 }
@@ -101,7 +110,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets, nonce, env }) => '<!DOCTYPE html>\r\n<html lang="en" class="relative h-full antialiased dark">\r\n  <head>\r\n    <meta charset="utf-8" />\r\n    <meta name="viewport" content="width=device-width, initial-scale=1" />\r\n    <link rel="icon" href="/favicon.ico" />\r\n    ' + head + `\r
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\r\n<html lang="en" class="relative h-full antialiased dark">\r\n  <head>\r\n    <meta charset="utf-8" />\r\n    <meta name="viewport" content="width=device-width, initial-scale=1" />\r\n    <link rel="icon" href="/favicon.ico" />\r\n    ' + head + `\r
     <script>\r
       function disableTransitionsTemporarily() {\r
         document.documentElement.classList.add('[&_*]:!transition-none')\r
@@ -190,16 +199,20 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1hpgt7"
+  version_hash: "nhrryq"
 };
 function get_hooks() {
   return {};
 }
 export {
-  set_public_env as a,
-  set_building as b,
+  assets as a,
+  base as b,
+  set_public_env as c,
+  set_assets as d,
+  set_building as e,
   get_hooks as g,
   options as o,
   public_env as p,
+  reset as r,
   set_private_env as s
 };

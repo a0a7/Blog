@@ -1,4 +1,4 @@
-import { c as create_ssr_component, b as add_attribute } from "../../chunks/index2.js";
+import { c as create_ssr_component, b as add_attribute } from "../../chunks/index.js";
 import "vanilla-tilt-svelte";
 const app = "";
 const prism = "";
