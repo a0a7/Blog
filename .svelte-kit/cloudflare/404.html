@@ -1,1 +1,49 @@
-Not Found
+<!DOCTYPE html>
+<html lang="en" class="relative h-full antialiased dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+    
+		<link rel="modulepreload" href="/_app/immutable/entry/start.98ab16ee.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.97c0832a.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons.063ef672.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/paths.8259f57f.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.b05115c9.js">
+    <script>
+      function disableTransitionsTemporarily() {
+        document.documentElement.classList.add('[&_*]:!transition-none')
+        window.setTimeout(() => {
+          document.documentElement.classList.remove('[&_*]:!transition-none')
+        }, 0)
+      }
+
+      function updateModeWithoutTransitions() {
+        disableTransitionsTemporarily()
+        updateMode()
+      }
+    </script>
+  </head>
+
+  <body class="h-full">
+    <div>
+			<script>
+				{
+					__sveltekit_o23o9g = {
+						base: "",
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.98ab16ee.js"),
+						import("/_app/immutable/entry/app.b05115c9.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

@@ -5,8 +5,7 @@
 		"/*"
 	],
 	"exclude": [
-		"/_app/immutable/*",
-		"/_app/version.json",
+		"/_app/*",
 		"/elk.jpg",
 		"/favicon.ico",
 		"/font/AffiliateMasteryItalic.otf",
